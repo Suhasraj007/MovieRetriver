@@ -4,3 +4,5 @@ Moobie is a Movie Finding Web App created using the [Open Movie Database (OMDb) 
 ## Key Learnings
 * Learning about APIs and using one 
 * JSON
+* Axios
+* jQuery
