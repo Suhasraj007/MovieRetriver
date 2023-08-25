@@ -9,7 +9,7 @@ $(document).ready(() => {
 
 // Retrieves movies depending on Search query
 function getMovies(searchText) {
-    axios.get("http://www.omdbapi.com/?apikey=91f483c0&s="+searchText)
+    axios.get("https://www.omdbapi.com/?apikey=91f483c0&s="+searchText)
     .then((response) => {
         console.log(response);
         let movies = response.data.Search;
@@ -43,7 +43,7 @@ function movieSelected(id){
 function getMovie(){
     let movieID = sessionStorage.getItem("movieID");
 
-    axios.get("http://www.omdbapi.com/?apikey=91f483c0&i=" + movieID)
+    axios.get("https://www.omdbapi.com/?apikey=91f483c0&i=" + movieID)
         .then((response) => {
             console.log(response);
             let movie = response.data;
